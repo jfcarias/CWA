@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= Login
+  form(action="/login", method="post")
+    label First name:
+    br
+    input(type="text", name="usuario", value="John")
+    br
+    input(type="submit", value="Submit")
