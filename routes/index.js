@@ -18,7 +18,7 @@ router.post('/login', function(req, res, next) {
   if (username == u.username){
   	res.render('index', { title: username });
   }else{
-  	res.sendStatus(403);
+  	res.render('login');
   }
   
 });
