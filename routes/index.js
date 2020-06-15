@@ -26,5 +26,8 @@ router.get('/calendario', function(req, res, next) {
 	// calendario tendra que consultar a la base de datos para rellenar los viajes de cada día...
 	res.render('calendario');
 });
+router.get('/hello', function(req, res, next) {
+	res.render('index');
+});
 
 module.exports = router;
