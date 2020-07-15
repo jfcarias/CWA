@@ -1,8 +1,113 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+body {
+	background: #66A5AD;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+p {
+	font-size: 15px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+a.salir {
+    color: rgba(255, 0, 0, 1);
+    padding-left: 90%;
+    text-decoration: none;
+}
+
+.navegacion {
+	width: 1000px;
+	margin: 30px auto;
+	background: #fff;
+}
+
+.navegacion ul {
+	list-style: none;
+}
+
+.menu > li {
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a {
+	display: block;
+	padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+}
+
+.menu > li > a:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+.submenu {
+	position: absolute;
+	background: #66A5AD;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.submenu > li > a {
+	display: block;
+    padding-top: 20px;
+	padding-left: 20px;
+    padding-right: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu > li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+}
+
+image {
+  width: 350px;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: rgba(255, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
 }

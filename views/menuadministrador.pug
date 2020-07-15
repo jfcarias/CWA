@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  block head
+  body
+    block content
+    br
+    a.salir(href='/') Salir
+    div.image
+      img(src="/images/image.png")
+    nav.navegacion
+    ul.menu
+      li
+        a(href='#') Calendario de eventos
+      li
+        a(href='#') Consultar eventos anteriores
+      li
+        a(href='') Información
+        ul.submenu
+          li
+            a(href='/menu/informacionresidencias') Residencias
+          li
+            a(href='/menu/informacionvoluntarios') Voluntarios
+      li
+        a(href='/menu/opiniones') Opiniones
+      li
+        a(href='#') Añadir o eliminar
+        ul.submenu
+          li
+            a(href='#') Residencias
+          li
+            a(href='#') Voluntarios

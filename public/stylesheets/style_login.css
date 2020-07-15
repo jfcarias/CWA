@@ -170,7 +170,7 @@ input {
 }
 
 .overlay {
-    background: rgba(0, 128, 128, 0.8);
+    background: #66A5AD;
 	//background: #FF416C;
 	//background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
 	//background: linear-gradient(to right, #FF4B2B, #FF416C);

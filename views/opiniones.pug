@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  block head
+  body
+    block content
+    br
+    p Añadir una nueva opinión:
+    textarea(name="opinion", rows = "20", cols = "50")
+    br
+    button(type="submit") Enviar
+    br
+    br
+    p Lista de opiniones:
